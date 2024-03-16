@@ -59,11 +59,11 @@
 }
 
 .auth {
-  @apply flex-center min-h-screen w-full bg-primary
+  @apply flex-center min-h-screen w-full bg-background
 }
 
 .root {
-  @apply flex min-h-screen w-full flex-col bg-white lg:flex-row;
+  @apply flex min-h-screen w-full flex-col bg-background lg:flex-row;
 }
 
 .root-container {
@@ -73,7 +73,7 @@
 @layer utilities {
   /* ===== UTILITIES */
   .wrapper {
-    @apply max-w-5xl mx-auto px-5 md:px-10 w-full text-dark-400 p-16-regular;
+    @apply max-w-5xl mx-auto px-5 md:px-10 w-full p-16-regular;
   }
 
   .gradient-text {

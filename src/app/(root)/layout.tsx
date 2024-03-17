@@ -1,5 +1,7 @@
 import { ReactNode } from 'react'
 
+import Sidebar from '@/components/shared/sidebar'
+
 function RootAppLayout({
   children,
 }: Readonly<{
@@ -7,6 +9,8 @@ function RootAppLayout({
 }>) {
   return (
     <main className="root">
+      <Sidebar />
+
       <div className="root-container">
         <div className="wrapper">{children}</div>
       </div>

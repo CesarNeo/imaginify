@@ -13,7 +13,7 @@ function Sidebar() {
   const pathname = usePathname()
 
   return (
-    <aside className="sidebar ">
+    <aside className="sidebar">
       <div className="flex size-full flex-col gap-4">
         <Link href="/" className="sidebar-logo">
           <Image
@@ -21,6 +21,8 @@ function Sidebar() {
             alt="Logo Imaginify"
             width={180}
             height={28}
+            className="h-7 w-[11.25rem]"
+            priority
           />
         </Link>
 

@@ -138,7 +138,7 @@ export const TRANSFORMATION_TYPES = {
     config: { restore: true },
     icon: 'image.svg',
   },
-  REMOVE_BACKGROUND: {
+  REMOVEBACKGROUND: {
     type: 'removeBackground',
     title: 'Background Remove',
     subTitle: 'Removes the background of the image using AI',
@@ -170,7 +170,7 @@ export const TRANSFORMATION_TYPES = {
     },
     icon: 'filter.svg',
   },
-}
+} as const
 
 export const ASPECT_RATIO_OPTIONS = {
   '1:1': {

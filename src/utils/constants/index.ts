@@ -132,28 +132,28 @@ export const PLANS = [
 
 export const TRANSFORMATION_TYPES = {
   RESTORE: {
-    type: 'restore',
+    type: 'RESTORE',
     title: 'Restore Image',
     subTitle: 'Refine images by removing noise and imperfections',
     config: { restore: true },
     icon: 'image.svg',
   },
   REMOVEBACKGROUND: {
-    type: 'removeBackground',
+    type: 'REMOVEBACKGROUND',
     title: 'Background Remove',
     subTitle: 'Removes the background of the image using AI',
     config: { removeBackground: true },
     icon: 'camera.svg',
   },
   FILL: {
-    type: 'fill',
+    type: 'FILL',
     title: 'Generative Fill',
     subTitle: "Enhance an image's dimensions using AI outpainting",
     config: { fillBackground: true },
     icon: 'stars.svg',
   },
   REMOVE: {
-    type: 'remove',
+    type: 'REMOVE',
     title: 'Object Remove',
     subTitle: 'Identify and eliminate objects from images',
     config: {
@@ -162,7 +162,7 @@ export const TRANSFORMATION_TYPES = {
     icon: 'scan.svg',
   },
   RECOLOR: {
-    type: 'recolor',
+    type: 'RECOLOR',
     title: 'Object Recolor',
     subTitle: 'Identify and recolor objects from the image',
     config: {
@@ -170,7 +170,7 @@ export const TRANSFORMATION_TYPES = {
     },
     icon: 'filter.svg',
   },
-} as const
+}
 
 export const ASPECT_RATIO_OPTIONS = {
   '1:1': {

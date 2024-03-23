@@ -114,7 +114,7 @@ declare type RemoveUrlQueryParams = {
 
 declare type SearchParamProps = {
   params: { id: string; type: TransformationTypeKey }
-  searchParams: { [key: string]: string | string[] | undefined }
+  searchParams: { page: string; query: string }
 }
 
 declare type TransformationFormProps = {
@@ -133,5 +133,5 @@ declare type TransformedImageProps = {
   transformationConfig: Transformations | null
   isTransforming: boolean
   hasDownload?: boolean
-  setIsTransforming?: React.Dispatch<React.SetStateAction<boolean>>
+  onTransformingChange?: React.Dispatch<React.SetStateAction<boolean>>
 }

@@ -5,6 +5,7 @@ import type { Metadata } from 'next'
 import { IBM_Plex_Sans as IBMPlexSans } from 'next/font/google'
 import { ReactNode } from 'react'
 
+import { Toaster } from '@/components/ui/sonner'
 import { cn } from '@/lib/utils'
 
 const ibmPlex = IBMPlexSans({
@@ -32,6 +33,8 @@ export default function RootLayout({
       <html lang="en">
         <body className={cn('font-ibm-plex antialiased', ibmPlex.variable)}>
           {children}
+
+          <Toaster richColors />
         </body>
       </html>
     </ClerkProvider>

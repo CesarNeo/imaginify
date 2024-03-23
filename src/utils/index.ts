@@ -109,7 +109,7 @@ export const download = (url: string, filename: string) => {
     throw new Error('Resource URL not provided! You need to provide one')
   }
 
-  fetch(url)
+  return fetch(url)
     .then((response) => response.blob())
     .then((blob) => {
       const blobURL = URL.createObjectURL(blob)
